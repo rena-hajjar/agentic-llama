@@ -1,8 +1,14 @@
-import PyQt6
+from PyQt6.QtWidgets import QApplication, QWidget
+import sys
 
 
 def main():
-    print("Testing")
+    app = QApplication(sys.argv)
+
+    window = QWidget()
+    window.show()
+
+    app.exec()
 
 
 main()
